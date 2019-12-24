@@ -1,22 +1,24 @@
-# Python .DS_Store parser
+# DS Crawler
 
-This repository contains a parser for Apple's `.DS_Store` file format. 
-
-A sample file form a CTF is included in the `./samples/` directory and the you can try the parser using `python3 main.py ./samples/.DS_Store.ctf`. 
-
-Here's my blogpost that tries to explain the structure and format in detail:  https://0day.work/parsing-the-ds_store-file-format/
+This Python tool made to crawl web servers for unintended files/folders  via parser for Apple's `.DS_Store` file format. 
 
 # Usage
 
 ```
-$ python main.py samples/.DS_Store.ctf 
-Count:  6
-favicon.ico
-flag
-static
-templates
-vulnerable.py
-vulnerable.wsgi
+$ python DS_Crawler.py -h
+
+   /   \/ _\   / __\ __ __ ___      _| | ___ _ __ 
+  / /\ /\ \   / / | '__/ _` \ \ /\ / / |/ _ \ '__|
+ / /_// _\ \ / /__| | | (_| |\ V  V /| |  __/ |   
+/___,'  \__/ \____/_|  \__,_| \_/\_/ |_|\___|_|   
+                        v1.0 [0xdeadbeef]
+usage: DS_Crawler.py [-h] -u URL [-v]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -u URL, --url URL  web site that you want to crawl
+  -v, --verbose      To enable verbosity
+
 ```
 
 # Useful ressources
